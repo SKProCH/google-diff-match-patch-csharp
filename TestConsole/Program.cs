@@ -1,8 +1,8 @@
 ﻿using DiffMatchPatch;
+
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using System.Diagnostics;
 using System.Linq;
 namespace System.Runtime.CompilerServices
 {
@@ -42,6 +42,6 @@ namespace TestConsole
             Console.WriteLine(record1 == record2);
         }
 
-        record MyRecord(ImmutableList<int> SomeList);
+        readonly record struct MyRecord(ImmutableList<int> SomeList);
     }
 }
